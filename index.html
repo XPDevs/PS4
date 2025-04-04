@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/style.min.css" />
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/animate.min.css">
+	    <link rel="stylesheet" type="text/css" href="./assets/css/loader.css">
     <script src="./assets/js/jquery.min.js"></script>
   </head>
   <body>
@@ -59,13 +60,18 @@
                         <span class="gameTitle">What's New</span>
                     </div>
                     </a>
-                    <a href="https://eaglercraft.org/">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame elden" tabindex="0"></div>
-                        <div class="gameText">Start</div>
-                        <span class="gameTitle">Elden Ring</span>
-                    </div>
-                    </a>
+<a href="#" id="openIframe">
+    <div class="squareGame animated bounceInLeft">
+        <div class="imgGame elden" tabindex="0"></div>
+        <div class="gameText">Start</div>
+        <span class="gameTitle">Elden Ring</span>
+    </div>
+</a>
+
+<div class="iframe-container" id="iframeContainer">
+    <span class="close-button" id="closeIframe">&times;</span>
+    <iframe id="iframe" src="https://eaglercraft.org/"></iframe>
+</div>
                 
                          </a>
                         <a href="#">
@@ -93,5 +99,6 @@
 
     <!--========== JAVASCRIPT ===========-->
     <script  src="./assets/js/script.js"></script>
+	  <script src="./assets/js/loader.js"> </script>
   </body>
 </html>
